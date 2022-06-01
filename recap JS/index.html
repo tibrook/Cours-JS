@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Manipulation du DOM</title>
+</head>
+<body>
+
+    <div class="click-event box">
+        <h4>Quelle est la capitale de la Suisse ? </h4>
+        <button id="btn-1">Berne</button>
+        <button id="btn-2">Pluméliau</button>
+        <p>La bonne réponse est Berne</p>
+    </div>
+    <div class="mouseMove"></div>
+    <div class="keypress box">
+        <h2>Vous appuyez sur la touche :<span id="key"></span></h2>
+    </div>
+    <nav>
+        <ul>
+            <li>Accueil</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <form action=""class="box">
+
+        <input type="text" placeholder="Entrez votre nom">
+
+        <select>
+            <option value="">Sélectionnez votre langage favoris</option>
+            <option value="javascript">javascript</option>
+            <option value="php">php</option>
+            <option value="python">python</option>
+        </select>
+        <input type="checkbox" id="cgv">
+        <label for ="cgv" value="Valider">Accepter les CVG</label>
+        <input type="submit" value="Valider">
+        <div></div>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
