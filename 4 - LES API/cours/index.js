@@ -91,5 +91,41 @@ fetch("data.json").then((res)=>res.json()).then((data)=>{
   // Stringify => converti en JSON
   let settings = JSON.stringify(data);
   //Parse => transforme JSON en objet JS 
-  console.log(JSON.parse(settings));
-})
+  //console.log(JSON.parse(settings));
+});
+
+//--------------------------------------------------
+//                           Web API 
+//--------------------------------------------------
+
+          //---------------
+          // CLIENT STORAGE 
+          //---------------
+ //---------------
+ // Local Storage 
+ //---------------
+localStorage.data = "je stock de la data";
+ //document.body.textContent = localStorage.data
+
+ //localStorage.removeItem('data')
+
+ const obj = {
+   name: "Denis",
+   age: 22,
+ };
+ localStorage.user =JSON.stringify(obj);
+
+ //console.log(JSON.parse(localStorage.user));
+
+ //---------------
+ // Session Storage
+ //---------------
+ //sessionStorage.dataSettings ="55px";
+ sessionStorage.clear();
+
+ //---------------
+ // Cookies
+ //---------------
+
+ document.cookie = "username=fromScratch";
+ document.cookie = "pseudo=FS;path=/; max-age:450000; secure; samesite"
