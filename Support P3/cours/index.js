@@ -166,3 +166,100 @@ arrayNumber.push(17);
 //console.log(arrayNumber.filter((number)=> number>10)); //[74, 28, 12, 17]
 // console.log(arrayNumber.sort()); //[1, 12, 17, 28, 4, 74]
 //console.log(arrayNumber.sort((a,b)=>b-a)); //[74, 28, 17, 12, 4, 1]
+
+//document.body.innerHTML = arrayNumber.map((number) => `<li>${number}</li>`).join("");
+
+//---------------------------------------------------------------------
+// Méthodes objets 
+//---------------------------------------------------------------------
+//document.body.innerHTML = data
+/* //.filter((user) => user.admin === false) // liste tous les membres non admin
+.filter((user) => user.pseudo.includes("i"))
+.sort((a, b) => b.age -a.age) //Permet de trier les users par age
+//Affiche la fonction 
+.map((user)=> `
+  <div class ="user-card">
+    <h2>${user.pseudo}</h2>
+    <p>Age : ${user.age} ans </p>
+    <p>Admin : ${user.admin ? "Modérateur" : "Membre"}</p>
+  </div>
+`)
+.join(""); */
+
+//---------------------------------------------------------------------
+// Les dates 
+//---------------------------------------------------------------------
+
+
+// Date classique 
+/* let date = new Date(); 
+//console.log(date); //Fri Jun 03 2022 12:59:30 GMT+0200 (heure d’été d’Europe centrale)
+
+//Timestamp
+let timestamp = Date.parse(date);
+console.log(timestamp);
+
+//IsoString
+console.log(date.toISOString()); // 2022-06-03T11:02:05.084Z
+
+function dateParser(chaine){
+  let newDate = new Date(chaine).toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  });
+  console.log(newDate);// 3 juin 2022
+} */
+/* console.log(dateParser(date))
+console.log(dateParser(timestamp))
+console.log(dateParser(iso)) */
+
+//---------------------------------------------------------------------
+//Destructuring
+//---------------------------------------------------------------------
+
+let moreData = {
+  destVar: ["Element 1", "Element 2"],
+}
+const { destVar } = moreData;
+
+
+//console.log(moreData.destVar);
+//console.log(destVar);
+
+let array5 = [70,80,90];
+let [x, y, z] = array5;
+/* console.log(x);
+console.log(y);
+console.log(z); */
+
+const dateDestructuring = (chaine) =>{
+  let newDate = chaine.split("T")[0];
+  console.log(newDate);
+}
+
+
+const h3js = document.getElementById("javascript");
+const h3 = document.querySelectorAll("h3");
+h3.forEach((language)=>{
+ // console.log(language.dataset.lang);
+})
+
+//regex 
+let mail ="from_scratch@gmail.COM";
+//console.log(mail.search(/from/)); //retourne 0 s'il trouve -1 sinon
+//console.log(mail.replace(/from/, "de"));
+//console.log(mail.match(/SCratch/i)); //i permet de ne plus etre case sensitive
+
+// Explication Regex :
+// 1 : Tous les chiffres + lettres + _ -
+// 2 : @
+// 3 : Toutes les chiffres et lettres + -
+// 4 : .
+// 5 : toutes les lettres, de 2 à 4 de longeur
+
+//i permet de renseigner que l'on n'est pas sensible à la casse
+//console.log(mail.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i));
+//let separator = 26468463843684;
+//Permet de séparer par milliers avec des ,
+//console.log(separator.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","));

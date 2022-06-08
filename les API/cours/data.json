@@ -1,0 +1,7 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.formatOnSave": true,
+    "editor.suggest.showWords": false
+}

@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "pseudo": "From scratch",
+      "message": "Yo les gens !",
+      "id": 1
+    },
+    {
+      "pseudo": "From scratch",
+      "message": "Yo les gens !",
+      "id": 2
+    },
+    {
+      "pseudo": "From scratch",
+      "message": "Yo les gens !",
+      "id": 3
+    },
+    {
+      "pseudo": "From scratch",
+      "message": "Yo les gens !",
+      "id": 4
+    },
+    {
+      "pseudo": "From scratch",
+      "message": "Yo les gens !",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "pseudo": "From scratch",
+      "message": "Yo les gens !",
+      "id": 1
+    },
+    {
+      "pseudo": "From scratch",
+      "message": "Yo les gens !",
+      "id": 2
+    }
+  ]
+}
