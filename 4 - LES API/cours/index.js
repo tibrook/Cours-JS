@@ -32,7 +32,7 @@ const init = {
 };
 
 //crud => Create (POST), read (GET), update (PUT), Delete (DEL)
-
+let banane="";
 const init2 = {
   method: "POST",
   headers: {
